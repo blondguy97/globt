@@ -1,0 +1,281 @@
+@media (max-width: 1200px) 
+    .container 
+        max-width: 960px
+    .header
+        &__menu-link
+            font-size: 11px
+        &__content-subtitle
+            font-size: 22px
+        &__content-title
+            font-size: 55px
+            line-height: 0.9
+            span
+                font-size: 36px
+        &__content-item
+            width: 200px
+    .advantages
+        &__inner
+            justify-content: space-between
+    .delivering
+        &__item
+            max-width: 290px
+    .price
+        &-item
+            width: 215px
+            &__header
+                font-size: 14px
+
+    .consultation
+        &__title
+            font-size: 25px
+    .footer
+        &__text 
+            font-size: 14px
+            margin-left: 20px
+        &-logo
+            img
+                width: 85%
+        &__call
+            font-size: 16px
+
+
+            
+    
+@media (max-width: 992px) 
+    .container 
+        max-width: 720px
+    .header
+        &__menu-link
+            font-size: 10px
+        &__menu-item
+            margin: 0 5px
+        &__content-subtitle
+            font-size: 22px
+        &__content
+            margin-top: 30px
+        &__content-item
+            width: 150px
+        &__content-text
+            margin-top: 10px
+            font-size: 11px
+        &__logo
+            max-width: 50px
+        &__content-title
+            font-size: 55px
+            line-height: 0.8
+            span
+                font-size: 30px
+        &__menu-item
+            &:not(:first-child):before
+                content: ''
+                border-left: 2px dotted #858891
+                margin-right: 10px
+    .advantages
+        &__item
+            width: 320px
+            &-text
+                margin-left: 10px
+    .delivering
+        &__inner
+            flex-wrap: wrap
+        &__item
+            max-width: 40%
+            margin: 0 auto
+        &__item
+            &:not(:last-child)
+                margin-bottom: 25px
+    .price
+        &__inner
+            flex-wrap: wrap
+        &-item
+            width: 47%
+            margin-bottom: 20px
+    .consultation
+        margin-top: 30px
+        &__form
+            &::before
+                width: 80px
+                height: 80px
+                top: -59px
+            &-input
+                padding: 8px 15px
+            &-img
+                width: 15%
+    .quastions
+        &-form
+            &__input
+                width: 200px
+    .footer
+        &__left
+            flex-direction: column
+        &__text
+            margin-left: 0
+            margin-top: 10px
+            
+
+@media (max-width: 768px) 
+    .container 
+        max-width: 540px
+    .header
+        padding: 20px 0 40px 0
+        &__menu
+            position: fixed
+            bottom: -100%
+            width: 100%
+            height: 50vh
+            padding: 20px 15px
+            flex-direction: column
+            display: flex
+            background-color: rgba(236, 100, 75, 0.8)
+            justify-content: space-evenly
+            transition: 0.3s all
+            align-items: center
+            &--active
+                bottom: 0
+            &-link
+                font-size: 20px
+                &:after
+                    display: none
+            &-item
+                margin: 0
+                &:before
+                    display: none
+        &__content
+            &-subtitle
+                font-size: 18px
+            &-title
+                font-size: 35px
+                line-height: 1
+                span
+                    font-size: 24px
+            &-item
+                padding: 10px
+                width: 200px
+            &-list 
+                margin-top: 30px
+                justify-content: space-evenly
+        &__top
+            justify-content: space-around
+    .hamburger
+        position: absolute
+        display: block
+        width: 20px
+        cursor: pointer
+        right: 20px
+        span
+            display: block
+            width: 100%
+            height: 2px
+            background-color: $main-color
+            margin-bottom: 5px
+            &:nth-child(2)
+                width: 70%
+                margin: 0 auto 5px auto
+    .advantages
+        &__inner
+            flex-direction: column
+        &__item
+            width: 100%
+        &__col
+            margin-bottom: 30px
+               
+    .delivering
+        padding: 20px 0
+        &__inner
+            flex-direction: column
+        &__item
+            max-width: 100%
+
+    .consultation
+        &__form
+            padding: 40px 0
+            &-inputs
+                flex-direction: column
+            &-input
+                margin: 10px 0
+                padding: 20px 30px
+    .scheme
+        &__item
+            flex-basis: 50%
+
+    .quastions
+        &-form
+            &__line
+                flex-wrap: wrap
+            &__input
+                width: 100%
+                margin: 10px 0
+    .footer
+        &__text
+            font-size: 11px
+        &__logo
+            width: 25%
+        &__call, &__call a
+            font-size: 14px
+        &__makers
+            margin-left: 30px
+    
+            
+@media (max-width: 576px) 
+    .container 
+        width: 100%
+        padding: 0 10px
+    .header
+        &__content
+            &-subtitle
+                font-size: 12px
+            &-title
+                font-size: 22px
+                span
+                    font-size: 14px
+            &-list
+                margin-top: 10px
+            &-text
+                font-size: 15px
+            &-item
+                width: 250px
+    .advantages
+        padding: 20px 0
+    .price
+        &__inner
+            display: flex
+            flex-direction: column
+            align-items: center
+        &-item
+            width: 100%
+            margin-bottom: 40px    
+   
+    .scheme
+        &__item
+            flex-basis: 100%
+
+    .quastions
+        &-form
+            &__input
+                margin: 5px 0
+                font-size: 14px
+                padding: 18px 15px
+            &__textarea 
+                padding: 18px 15px
+                font-size: 14px
+    .footer
+        &__top
+            flex-wrap: wrap
+        &__left 
+            width: 100%
+        &__right
+            width: 100%
+            justify-content: center
+            margin-top: 20px
+        &__bottom
+            flex-wrap: wrap
+        &__date
+            width: 100%
+            justify-content: space-around
+        &__makers
+            width: 100%
+            justify-content: space-between
+            margin: 10px auto 0 auto
+        &__call, &__call a 
+            font-size: 12px
+            
