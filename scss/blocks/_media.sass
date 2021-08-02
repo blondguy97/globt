@@ -111,6 +111,7 @@
         &__text
             margin-left: 0
             margin-top: 10px
+    
             
 
 @media (max-width: 768px) 
@@ -120,24 +121,26 @@
         padding: 20px 0 40px 0
         &__menu
             position: fixed
-            bottom: -100%
-            width: 100%
-            height: 50vh
+            right: -100%
+            width: 50%
+            height: 100vh
+            top: 0
             padding: 20px 15px
             flex-direction: column
             display: flex
-            background-color: rgba(236, 100, 75, 0.8)
-            justify-content: space-evenly
+            background-color: rgb(236, 100, 75)
+            justify-content: center
             transition: 0.3s all
             align-items: center
+            z-index: 5
             &--active
-                bottom: 0
+                right: 0
             &-link
                 font-size: 20px
                 &:after
                     display: none
             &-item
-                margin: 0
+                margin: 10px 0
                 &:before
                     display: none
         &__content
@@ -171,6 +174,11 @@
             &:nth-child(2)
                 width: 70%
                 margin: 0 auto 5px auto
+        &--active
+            z-index: 5
+            position: fixed
+            span
+                background-color: white
     .advantages
         &__inner
             flex-direction: column
@@ -214,6 +222,9 @@
             font-size: 14px
         &__makers
             margin-left: 30px
+    .map
+        &__info
+            padding: 15px 30px 15px 30px
     
             
 @media (max-width: 576px) 
@@ -278,4 +289,4 @@
             margin: 10px auto 0 auto
         &__call, &__call a 
             font-size: 12px
-            
+    

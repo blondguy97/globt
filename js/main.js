@@ -5,6 +5,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     hamburger.addEventListener('click', () => {
         menu.classList.toggle('header__menu--active');
+        hamburger.classList.toggle('hamburger--active')
     });
 
     menuItem.forEach(item => {
